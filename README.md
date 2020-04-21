@@ -1,5 +1,5 @@
 # Aplicacion-personal-de-noticias
-Aplicación móvil que muestra noticias de la api "newsApi" desarrollada en Ionic
+Aplicación móvil que muestra noticias de la api "newsApi" desarrollada en Ionic <br>
 Descargar repositorio y correr el comando  'npm install' en el directorio raiz
 
 Secciones:
