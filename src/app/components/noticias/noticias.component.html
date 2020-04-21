@@ -1,0 +1,17 @@
+
+
+<ion-list>
+  <ion-list-header>
+    <ion-label>{{titleHead}}</ion-label>
+    <ion-button> <ion-icon slot="end" name="card-outline"></ion-icon> </ion-button>
+  </ion-list-header>
+  <app-articulo *ngFor="let articulo of articulos; let i = index" 
+  [fuente]="articulo.source.name"
+  [imagen]="articulo.urlToImage"
+  [titulo]="articulo.title"
+  [contenido]="articulo.description"
+  [url]="articulo.url"
+  [fecha]= "articulo.publishedAt"
+  [notice]="articulo"
+  [enFavoritos]="enFavoritos"></app-articulo>
+</ion-list>

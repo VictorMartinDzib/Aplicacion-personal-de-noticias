@@ -1,0 +1,11 @@
+<app-header titulo="Guardados"></app-header>
+
+<ion-content [fullscreen]="true">
+    
+    <ion-slides *ngIf="dataLocal.noticias.length === 0" [options]="slideOptions">
+            <ion-slide>
+                <label>No hay noticias guardadas</label>
+            </ion-slide>
+    </ion-slides>
+    <app-noticias *ngIf="dataLocal.noticias.length > 0" [articulos]="dataLocal.noticias" titleHead="Lista de favoritos" [enFavoritos]="true"></app-noticias>
+</ion-content>

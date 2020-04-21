@@ -1,0 +1,12 @@
+<app-header titulo="Destacados"></app-header>
+
+<ion-content [fullscreen]="true" color="light">
+
+      <app-noticias [articulos]="articulos" titleHead="Noticias destacadas">
+      </app-noticias>
+      
+      <ion-infinite-scroll threshold="100px" (ionInfinite)="cargarMasArticulos($event)">
+            <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Cargando...">
+            </ion-infinite-scroll-content>
+      </ion-infinite-scroll>
+</ion-content>
